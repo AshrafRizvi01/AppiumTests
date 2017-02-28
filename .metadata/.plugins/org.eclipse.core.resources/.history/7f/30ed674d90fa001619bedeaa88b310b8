@@ -1,0 +1,5 @@
+package com.wuu.android.test.util;
+
+public class ReadVerificationEmail {
+
+}

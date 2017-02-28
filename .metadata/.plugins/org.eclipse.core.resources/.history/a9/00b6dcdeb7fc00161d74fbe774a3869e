@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.csc.constants;
+
+/**
+ * Contains ids for the android elements presents in CSC Android
+ * 
+ * @author Ashraf Iftekhar, Feb 27, 2017
+ *
+ */
+public class AndroidIds {
+
+	// Launch page id's
+	protected String SIGN_IN_BUTTON = "";
+	protected String SIGN_UP_BUTTON = "";
+
+}

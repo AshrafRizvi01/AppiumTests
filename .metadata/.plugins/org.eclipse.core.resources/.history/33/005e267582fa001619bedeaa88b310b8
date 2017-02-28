@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.testing.utils;
+
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+
+/**
+ * Finds elements for iOS and Android depending upon their drivers
+ * @author Ashraf Iftekhar, Feb 24, 2017
+ *
+ */
+public class AppElements {
+
+	public static MobileElement getElement(AndroidDriver<MobileElement> driver, String id)
+	{
+		
+	}
+}

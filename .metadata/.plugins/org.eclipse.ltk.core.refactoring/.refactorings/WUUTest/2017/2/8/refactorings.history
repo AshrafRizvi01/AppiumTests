@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ReadVerificationEmail.java&apos; to &apos;SoftwareTesting/src/com.testing.utils&apos;&#x0A;- Original project: &apos;WUUTest&apos;&#x0A;- Destination element: &apos;SoftwareTesting/src/com.testing.utils&apos;&#x0A;- Original element: &apos;com.wuu.android.test.util.ReadVerificationEmail.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=SoftwareTesting/src&lt;com.testing.utils" element1="/src&lt;com.wuu.android.test.util{ReadVerificationEmail.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1487933785285" units="1" version="1.0"/>
+</session>

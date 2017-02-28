@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package com.csc.tests;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import com.testing.utils.AppElements;
+
+/**
+ * Contains tests for Sign In screen
+ * 
+ * @author Ashraf Iftekhar, Feb 28, 2017
+ *
+ */
+public class SignInPageTests extends BaseTest {
+	boolean visible = true;
+	@Test
+	public void Check_SignIn_page_validation(String Email, String Password, String Error) throws InterruptedException {
+		driver.findElement(By.id(id.EMAIL_TEXTBOX)).sendKeys(Email);
+		driver.findElement(By.id(id.PASSWORD_TEXTBOX)).sendKeys(Password);
+		driver.findElement(By.id(id.LOGIN_BUTTON)).click();
+		Thread.sleep(1000);
+		visible = AppElements.checkVisibility(driver.findElement(By.xpath(id.EMAIL_ERROR)));
+		AppElements.checkVisibility(driver.findElement(By.xpath(id.PASSWORD_ERROR)));
+	}
+
+}

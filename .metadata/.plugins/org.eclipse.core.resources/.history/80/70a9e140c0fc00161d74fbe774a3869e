@@ -1,0 +1,19 @@
+package com.csc.constants;
+
+public class Constants {
+
+	// set platform
+	public static String Platform = "Android";
+
+	// Android capabilities
+	public static String apkPath = "";
+	public static String PackageName = "";
+	public static String LaunchActivity = "";
+	public static String AndroidVersion = "";
+
+	// iOS Capabilities
+	public static String appPath = "";
+	public static String DeviceName = "";
+	public static String UDID = "";
+	public static String iOSVersion = "";
+}

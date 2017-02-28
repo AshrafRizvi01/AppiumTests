@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.wuu.android.test.onboarding.CompleteFunctionalyTest">
+        <methods>
+          <include name="check_whether_the_sign_in_button_proceeds_to_Whats_your_email_screen"/>
+          <include name="check_whether_user_can_successfully_write_and_post_a_text_wuu"/>
+          <include name="check_whether_the_starts_with_the_SignIn_or_up_screen"/>
+          <include name="check_whether_entering_wrong_emails_proides_proper_error_message"/>
+          <include name="check_whether_the_user_can_signIn_or_up_without_any_issue"/>
+          <include name="check_whether_user_can_access_contacts_and_proceed_to_stream_screen"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.wuu.android.test.onboarding.CompleteFunctionalyTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

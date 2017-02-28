@@ -1,0 +1,20 @@
+1485105511326	Rename type 'Constants'
+1485147842093	Delete element
+1485176358372	Rename type 'WuuConstants'
+1485176403673	Move compilation unit
+1485176513236	Rename package 'com.wuu.constants'
+1485176527343	Move compilation unit
+1485176581977	Rename type 'ImportantFucntions'
+1485176703633	Delete element
+1485176902885	Rename package 'com.wuu.test'
+1485176936049	Rename package 'com.wuu.android.test.onboarding'
+1485176984872	Delete element
+1485177036337	Rename type 'UI_test'
+1485177046774	Move compilation unit
+1485177367162	Move compilation unit
+1485177481883	Rename method 'whatIsWuu'
+1485177567880	Rename method 'whatsYourEmail'
+1485177609698	Rename package 'com.wuu.util'
+1485178383805	Infer generic type arguments
+1485179398613	Rename method 'getConnection'
+1485325653743	Delete elements

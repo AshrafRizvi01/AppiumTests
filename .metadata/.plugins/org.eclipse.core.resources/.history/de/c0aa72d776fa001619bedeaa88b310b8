@@ -1,0 +1,30 @@
+package com.testing.utils 
+
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+
+public class Driver_Creation {
+	
+	public static AndroidDriver<MobileElement> getDriver() {
+		if (MobileDriver == null) {
+			File app = new File(apkPath);
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setCapability("deviceName", "Samsung");
+			cap.setCapability("app", app.getAbsolutePath());
+			cap.setCapability("appPackage", "com.wuu.android");
+			cap.setCapability("appActivity", "com.wuu.android.feature.onboarding.launch.LaunchActivity");
+			cap.setCapability("platformVersion", "6.0.1");
+			try {
+				MobileDriver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			}
+			MobileDriver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		}
+		return MobileDriver;
+	}
+
+}

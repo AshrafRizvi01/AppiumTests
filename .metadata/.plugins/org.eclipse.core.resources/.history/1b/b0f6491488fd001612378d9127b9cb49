@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package com.csc.tests;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.testing.utils.AppElements;
+
+/**
+ * Contains tests for Sign In screen
+ * 
+ * @author Ashraf Iftekhar, Feb 28, 2017
+ *
+ */
+public class SignInPageTests extends BaseTest {
+	boolean EmailErrorVisible = true;
+	boolean PasswordErrorVisible = true;
+
+	@DataProvider(name = "loginData")
+	public Object[][] dataprovider() {
+		Object[][] obj = new Object[][] { { "a@b", "aaa", true, true }, { "a@b@fg", "aaaaaa", true, false },
+				{ "a@b.co", "aaaa", false, true } };
+		return obj;
+	}
+
+	@Test(dataProvider = "loginData")
+	public void Check_SignIn_page_validation(String Email, String Password, boolean emailErr, boolean passErr)
+			throws InterruptedException {
+		driver.findElement(By.id(id.SIGN_IN_BUTTON)).click();
+		Thread.sleep(1000);
+		driver.findElement(By.id(id.EMAIL_TEXTBOX)).sendKeys(Email);
+		driver.findElement(By.id(id.PASSWORD_TEXTBOX)).sendKeys(Password);
+		driver.findElement(By.id(id.LOGIN_BUTTON)).click();
+		Thread.sleep(1000);
+		EmailErrorVisible = AppElements.checkVisibility(driver.findElement(By.xpath(id.EMAIL_ERROR)));
+		Assert.assertEquals(emailErr, EmailErrorVisible);
+		PasswordErrorVisible = AppElements.checkVisibility(driver.findElement(By.xpath(id.PASSWORD_ERROR)));
+		Assert.assertEquals(passErr, PasswordErrorVisible);
+		Thread.sleep(1000);
+		driver.navigate().back();
+	}
+
+}

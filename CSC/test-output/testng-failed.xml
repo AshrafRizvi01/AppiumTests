@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.csc.tests.SignInPageTests">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Ensure_that_after_clicking_the_Forgot_Password_button_user_is_redircted_to_ForgotPassword_screen"/>
+          <include name="Ensure_that_after_clicking_the_create_new_button_user_is_redircted_to_Sign_Up_screen"/>
+        </methods>
+      </class> <!-- com.csc.tests.SignInPageTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

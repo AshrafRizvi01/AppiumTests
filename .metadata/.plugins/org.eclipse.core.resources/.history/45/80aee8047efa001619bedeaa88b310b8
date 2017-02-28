@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package com.testing.utils;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.openqa.selenium.OutputType;
+
+import com.wuu.android.test.util.TakesScreenshot;
+
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+
+/**Captures Screenshots at different screens while in testing
+ * 
+ * @author Ashraf Iftekhar, Feb 24, 2017
+ *
+ */
+public class Capture_Screenshots {
+	
+	public static String CaptureScreenshot(AndroidDriver<MobileElement> driver, String Name)
+	{
+		String destDir = "Screenshots";
+		File scrFile = driver.getScreenshotAs(OutputType.FILE);
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy__hh_mm_ssaa");
+		new File(destDir).mkdirs();
+		String destFile = TestName + "_" + dateFormat.format(new Date()) + ".png";
+		try {
+			FileUtils.copyFile(scrFile, new File(destDir + "/" + destFile));
+			System.out.println("Screenshot Taken");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return Name;
+	}
+
+}
