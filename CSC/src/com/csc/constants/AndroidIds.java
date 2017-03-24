@@ -31,4 +31,16 @@ public class AndroidIds {
 
 	// Webview id
 	public String WEBVIEW = "org.cscpbc.parenting:id/webview";
+
+	// Register Page ids
+	// TODO Add ids before running
+	public String FIRST_NAME = "";
+	public String LAST_NAME = "";
+	public String PROFILE_NAME = "";
+	public String EMAIL = "";
+	public String PASSWORD = "";
+	public String CONFIRM_PASSWORD = "";
+	public String CONTINUE = "";
+	public String LOGIN_LINK = "";
+	public String BACK_BUTTON = "";
 }

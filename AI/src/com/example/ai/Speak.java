@@ -22,7 +22,7 @@ public class Speak {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) throws InvalidFormatException, IOException {
-		// TODO Auto-generated method stub
+
 		System.out.println("You: ");
 		String Command = sc.nextLine();
 		System.out.println("\n" + "Jarvis");

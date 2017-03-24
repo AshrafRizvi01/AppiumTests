@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
-<fullyQualifiedTypeName name="io.appium.java_client.remote.MobileCapabilityType"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver.TargetLocator"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.remote.BrowserType"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By.ByXPath"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="org.apache.james.mime4j.message.Message"/>
@@ -14,7 +7,6 @@
 <fullyQualifiedTypeName name="javax.mail.BodyPart"/>
 <fullyQualifiedTypeName name="com.wuu.android.test.util.ReadLeatestEmail"/>
 <fullyQualifiedTypeName name="com.wuu.android.test.BaseTest"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="com.wuu.android.test.util.Constants"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By.ByLinkText"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Platform"/>
@@ -48,16 +40,24 @@
 <fullyQualifiedTypeName name="org.testng.internal.Utils"/>
 <fullyQualifiedTypeName name="com.testing.utils.Driver_Creation"/>
 <fullyQualifiedTypeName name="io.appium.java_client.ios.IOSDriver"/>
-<fullyQualifiedTypeName name="com.csc.tests.BaseTest"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="com.csc.constants.Constants"/>
 <fullyQualifiedTypeName name="java.awt.Dimension"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Dimension"/>
 <fullyQualifiedTypeName name="com.testing.utils.SwipeFunctions"/>
-<fullyQualifiedTypeName name="com.testing.utils.Capture_Screenshots"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="com.csc.constants.AndroidIds"/>
 <fullyQualifiedTypeName name="io.appium.java_client.MobileDriver"/>
 <fullyQualifiedTypeName name="io.appium.java_client.android.AndroidDriver"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
+<fullyQualifiedTypeName name="com.testing.utils.Capture_Screenshots"/>
+<fullyQualifiedTypeName name="com.csc.constants.Constants"/>
+<fullyQualifiedTypeName name="com.testing.utils.AppElements"/>
+<fullyQualifiedTypeName name="com.csc.tests.BaseTest"/>
+<fullyQualifiedTypeName name="io.appium.java_client.pagefactory.AndroidFindBy"/>
 <fullyQualifiedTypeName name="io.appium.java_client.MobileElement"/>
 </qualifiedTypeNameHistroy>

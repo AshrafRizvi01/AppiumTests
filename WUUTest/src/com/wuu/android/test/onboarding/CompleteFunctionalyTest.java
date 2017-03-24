@@ -22,7 +22,6 @@ import io.appium.java_client.MobileElement;
 
 public class CompleteFunctionalyTest extends BaseTest {
 
-	// TODO write comments
 	@Test(priority = 0)
 	public void check_whether_the_starts_with_the_SignIn_or_up_screen() {
 		// Compare the actual activity with the expected activity
@@ -30,7 +29,6 @@ public class CompleteFunctionalyTest extends BaseTest {
 		Utils.takeScreenshot(driver, "0");
 	}
 
-	// TODO write doc
 	@Test(priority = 1)
 	public void check_whether_the_sign_in_button_proceeds_to_Whats_your_email_screen() {
 		// Click the sign up button
@@ -40,7 +38,6 @@ public class CompleteFunctionalyTest extends BaseTest {
 		Assert.assertEquals(driver.currentActivity(), Constants.EMAIL_ACTIVITY);
 	}
 
-	// TODO write doc and check variables
 	@Test(priority = 2)
 	public void check_whether_entering_wrong_emails_proides_proper_error_message() throws InterruptedException {
 		String errMsg = "";
@@ -59,7 +56,6 @@ public class CompleteFunctionalyTest extends BaseTest {
 		Assert.assertEquals(errMsg, "Invalid Email");
 	}
 
-	// TODO write doc
 	@Test(priority = 3)
 	public void check_whether_the_user_can_signIn_or_up_without_any_issue() throws InterruptedException {
 		// Enter an invalid email
@@ -77,10 +73,7 @@ public class CompleteFunctionalyTest extends BaseTest {
 			Thread.sleep(5000);
 		}
 		if (Constants.IS_NEW_USER == true) {
-			/*
-			 * TODO check for first name, last name and age and proceed to the
-			 * ContactRequestActivity
-			 */
+
 		}
 	}
 

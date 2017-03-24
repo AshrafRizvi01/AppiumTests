@@ -18,7 +18,7 @@ import com.testing.utils.SwipeFunctions;
  */
 public class LaunchPageTests extends BaseTest {
 
-	@Test(enabled = false)
+	@Test(priority = 0)
 	public void Check_Whether_the_pages_change_after_swiping_the_screen_horrizontally() throws InterruptedException {
 		// Swipe the page four times Right to Left and Left to Right
 		for (int i = 0; i < 4; i++) {
@@ -37,6 +37,7 @@ public class LaunchPageTests extends BaseTest {
 		driver.findElement(By.id(id.SIGN_IN_BUTTON)).click();
 		Thread.sleep(1000);
 		Assert.assertEquals(driver.currentActivity(), Constants.LoginActivity);
+		driver.navigate().back();
 	}
 
 	@Test
@@ -45,5 +46,6 @@ public class LaunchPageTests extends BaseTest {
 		driver.findElement(By.id(id.SIGN_UP_BUTTON)).click();
 		Thread.sleep(1000);
 		Assert.assertEquals(driver.currentActivity(), Constants.SignUpActivity);
+		driver.navigate().back();
 	}
 }

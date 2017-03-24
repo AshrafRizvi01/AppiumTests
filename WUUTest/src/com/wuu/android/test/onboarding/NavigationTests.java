@@ -53,7 +53,6 @@ public class NavigationTests extends BaseTest {
 		driver.findElement(By.id(Constants.ENTER_EMAIL_EDITTEXT)).sendKeys("abctest@yopmail.com" + "\n");
 		Thread.sleep(2000);
 		driver.navigate().back();
-		// TODO Check if we navigated back to the correct screen
 		driver.navigate().back();
 	}
 

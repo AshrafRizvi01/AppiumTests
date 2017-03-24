@@ -5,8 +5,10 @@
     <classes>
       <class name="com.csc.tests.SignInPageTests">
         <methods>
+          <include name="Check_SignIn_page_validation" invocation-numbers="0 1 2 3"/>
           <include name="beforeClass"/>
           <include name="Ensure_that_after_clicking_the_Forgot_Password_button_user_is_redircted_to_ForgotPassword_screen"/>
+          <include name="Check_whether_user_can_login_successfully"/>
           <include name="Ensure_that_after_clicking_the_create_new_button_user_is_redircted_to_Sign_Up_screen"/>
         </methods>
       </class> <!-- com.csc.tests.SignInPageTests -->

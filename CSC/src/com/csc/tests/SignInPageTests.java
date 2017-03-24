@@ -27,11 +27,11 @@ public class SignInPageTests extends BaseTest {
 	@DataProvider(name = "loginData")
 	public Object[][] dataprovider() {
 		Object[][] obj = new Object[][] { { "a@b", "aaa", true, true }, { "a@b@fg", "aaaaaa", true, false },
-				{ "a@b.co", "aaaa", false, true } };
+				{ "a@b.co", "aaaa", false, true }, { "aa@bb.cc", "asasasas", false, false } };
 		return obj;
 	}
 
-	@Test(dataProvider = "loginData", enabled = false)
+	@Test(dataProvider = "loginData")
 	public void Check_SignIn_page_validation(String Email, String Password, boolean emailErr, boolean passErr)
 			throws InterruptedException {
 		driver.findElement(By.id(id.SIGN_IN_BUTTON)).click();
@@ -55,7 +55,7 @@ public class SignInPageTests extends BaseTest {
 		driver.navigate().back();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void Check_whether_user_can_login_successfully() throws InterruptedException {
 		driver.findElement(By.id(id.SIGN_IN_BUTTON)).click();
 		Thread.sleep(1000);
