@@ -1,6 +1,5 @@
 package com.csc.tests;
 
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 
@@ -10,7 +9,6 @@ import com.testing.utils.Driver_Creation;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 /**
  * Base class for all the tests.
@@ -26,12 +24,6 @@ public class BaseTest {
 	// Driver
 	AndroidDriver<MobileElement> driver;
 	AndroidIds id = new AndroidIds();
-
-	public BaseTest(AndroidDriver<MobileElement> driver) {
-		this.driver = driver;
-
-		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-	}
 
 	@BeforeClass
 	public void beforeClass() {

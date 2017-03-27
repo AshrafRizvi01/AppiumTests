@@ -3,15 +3,9 @@ package com.csc.constants;
 import com.csc.tests.BaseTest;
 
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class Constants extends BaseTest {
-
-	public Constants(AndroidDriver<MobileElement> driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
 
 	@AndroidFindBy(id = "test")
 	public MobileElement elemet;
