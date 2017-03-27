@@ -1,0 +1,20 @@
+package com.test.testcases;
+
+import org.testng.annotations.Test;
+
+import com.test.pages.LoginPage;
+import com.test.utils.TestDriver;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+
+public class LoginTest {
+
+	AppiumDriver<MobileElement> driver = TestDriver.getAndroidDriver("apk", "PackageName", "LaunchActivity", "4.4")
+	LoginPage loginPage = new LoginPage(driver);
+			
+	@Test
+	public void Check_whether_user_is_able_to_login_without_any_issues() {
+		loginPage.login();
+	}
+}

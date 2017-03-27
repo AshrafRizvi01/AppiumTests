@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.test.utils;
+
+/**
+ * Contains methods to generate detailed report for Appium tests with Testng
+ * 
+ * @author Ashraf Iftekhar, Mar 27, 2017
+ *
+ */
+public class Reporting {
+
+	public static GenerateTestReport()
+	{
+		
+	}
+
+}
