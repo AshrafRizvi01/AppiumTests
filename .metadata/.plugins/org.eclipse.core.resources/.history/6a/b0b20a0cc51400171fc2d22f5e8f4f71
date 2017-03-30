@@ -1,0 +1,43 @@
+package com.test.utils;
+
+import java.io.IOException;
+
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.xml.sax.SAXException;
+
+public class NewTest {
+	@Test
+	public void f() throws ParserConfigurationException, SAXException, IOException {
+		// Reporting.generate("/Users/md.ashrafiftekhar/Desktop/Test.html",
+		// "NewReportName");
+	}
+
+	@DataProvider(name="dp")
+	public Object[][] dp() {
+		Object[][] obj = { { true, false }, { true, true }, { false, false } };
+		return obj;
+
+	@Test(dataProvider = "dp")
+	public void ff() throws ParserConfigurationException, SAXException, IOException {
+		// Reporting.generate("/Users/md.ashrafiftekhar/Desktop/Test.html",
+		// "NewReportName");
+	}
+
+	@Test
+	public void ff1() throws ParserConfigurationException, SAXException, IOException {
+		// Reporting.generate("/Users/md.ashrafiftekhar/Desktop/Test.html",
+		// "NewReportName");
+		Assert.assertEquals(true, false);
+	}
+
+	@AfterSuite
+	public void after() throws ParserConfigurationException, SAXException, IOException {
+		Reporting.generate("/Users/md.ashrafiftekhar/Desktop/Test.html", "NewReportName");
+	}
+
+}

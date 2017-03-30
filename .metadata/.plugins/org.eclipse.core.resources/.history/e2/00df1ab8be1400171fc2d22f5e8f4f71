@@ -1,0 +1,15 @@
+package com.test.utils;
+
+import java.io.IOException;
+
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.testng.annotations.Test;
+import org.xml.sax.SAXException;
+
+public class NewTest {
+	@Test
+	public void f() throws ParserConfigurationException, SAXException, IOException {
+		Reporting.generate("/Users/md.ashrafiftekhar/Desktop/Test.html", "NewReportName");
+	}
+}
