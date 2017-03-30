@@ -4,6 +4,12 @@ import org.openqa.selenium.Dimension;
 
 import io.appium.java_client.MobileDriver;
 
+/**
+ * Contains functions for right to left and Left to right swipe actions
+ * 
+ * @author Ashraf Iftekhar, Mar 30, 2017
+ *
+ */
 public class SwipeFunctions {
 
 	public static Dimension size;

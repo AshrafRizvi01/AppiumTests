@@ -15,6 +15,8 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 
 /**
+ * Generates and provides drivers for iOS and Android tests
+ * 
  * @author Ashraf Iftekhar, Mar 26, 2017
  *
  */
