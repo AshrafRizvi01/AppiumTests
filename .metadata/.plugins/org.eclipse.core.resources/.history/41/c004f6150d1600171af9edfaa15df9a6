@@ -1,0 +1,28 @@
+package com.test.pages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+
+public class FirstPage {
+
+	
+	@AndroidFindBy(id = "org.cscpbc.parenting:id/splash_log_in")
+	public MobileElement SignIn_Button;
+
+	@AndroidFindBy(id = "org.cscpbc.parenting:id/splash_sign_up")
+	public MobileElement SignUp_Button;
+	
+	
+	public FirstPage(AppiumDriver<MobileElement> driver) {
+		PageFactory.initElements(driver, this);
+	}
+
+	
+
+	public void Click_login() {
+		SignIn_Button.click();
+	}
+}

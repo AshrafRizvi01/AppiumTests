@@ -36,13 +36,34 @@
 		<item value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/javadoc" key="javadoc_command_history"/>
 		<item value="1.8" key="source"/>
 		<item value="true" key="version"/>
+		<item value="AppiumTestFramework" key="doctitle"/>
 		<item value="" key="docletname"/>
 		<item value="true" key="splitindex"/>
 		<item value="true" key="fromStandard"/>
 		<item value="false" key="notree"/>
-		<item value="/Users/md.ashrafiftekhar/Documents" key="destdir"/>
+		<item value="/Users/md.ashrafiftekhar/Desktop/doc" key="destdir"/>
 		<item value="false" key="openinbrowser"/>
 		<section name="projects">
+			<section name="CSC">
+				<item value="/Users/md.ashrafiftekhar/Documents/workspace/CSC/javadoc.xml" key="antpath"/>
+				<item value="/Users/md.ashrafiftekhar/Documents/workspace/CSC/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Appium_Test_Framework">
+				<item value="/Users/md.ashrafiftekhar/Documents/workspace/Appium_Test_Framework/javadoc.xml" key="antpath"/>
+				<item value="/Users/md.ashrafiftekhar/Desktop/doc" key="destdir"/>
+				<item value="file:/Users/md.ashrafiftekhar/Desktop/;https://docs.oracle.com/javase/8/docs/api/;http://docs.oracle.com/javase/8/javafx/api/" key="href"/>
+			</section>
+			<section name="WUUTest">
+				<item value="/Users/md.ashrafiftekhar/Documents/workspace/WUUTest/javadoc.xml" key="antpath"/>
+				<item value="/Users/md.ashrafiftekhar/Documents/workspace/WUUTest/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Sample_Test">
+				<item value="/Users/md.ashrafiftekhar/Documents/workspace/Sample_Test/javadoc.xml" key="antpath"/>
+				<item value="/Users/md.ashrafiftekhar/Documents/workspace/Sample_Test/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
 		</section>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.preferences.EditTemplateDialog_dialogBounds">
@@ -77,7 +98,7 @@
 		<item value="true" key="jarOptionsWizardPage.EXPORT_WARNINGS"/>
 		<item value="" key="jarOptionsWizardPage.DESCRIPTION_LOCATION"/>
 		<item value="true" key="jarOptionsWizardPage.BUILD_IF_NEEDED"/>
-		<item value="false" key="JarPackageWizardPage.EXPORT_JAVA_FILES"/>
+		<item value="true" key="JarPackageWizardPage.EXPORT_JAVA_FILES"/>
 		<item value="true" key="jarOptionsWizardPage.EXPORT_ERRORS"/>
 		<item value="true" key="JarManifestWizardPage.GENERATE_MANIFEST"/>
 		<item value="true" key="JarPackageWizardPage.EXPORT_CLASS_FILES"/>
@@ -87,8 +108,8 @@
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
-			<item value="/Users/md.ashrafiftekhar/Documents/AppiumTestFramework.jar"/>
 			<item value="/Users/md.ashrafiftekhar/Desktop/AppiumTestFramework.jar"/>
+			<item value="/Users/md.ashrafiftekhar/Documents/AppiumTestFramework.jar"/>
 		</list>
 	</section>
 	<section name="JavaElementSearchActions">
@@ -103,6 +124,17 @@
 	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="-32" key="DIALOG_X_ORIGIN"/>
+			<item value="0" key="DIALOG_Y_ORIGIN"/>
+		</section>
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>

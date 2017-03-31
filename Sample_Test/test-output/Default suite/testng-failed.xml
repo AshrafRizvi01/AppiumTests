@@ -5,9 +5,8 @@
     <classes>
       <class name="com.test.testcases.LoginTest">
         <methods>
-          <include name="Sample_test_method_to_test_the_report_process3"/>
-          <include name="report"/>
-          <include name="Sample_test_method_to_test_the_report_process"/>
+          <include name="Check_whether_user_is_able_to_login_without_any_issues"/>
+          <include name="before"/>
         </methods>
       </class> <!-- com.test.testcases.LoginTest -->
     </classes>

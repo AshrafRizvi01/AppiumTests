@@ -25,6 +25,7 @@
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/jersey1.xjars/asm-3.1.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/jersey1.xjars/jersey-core-1.8.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/jersey1.xjars/jersey-server-1.8.jar"/>
+	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Documents/Important Jars/java-mail-1.4.4.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Desktop/AppiumTestFramework.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

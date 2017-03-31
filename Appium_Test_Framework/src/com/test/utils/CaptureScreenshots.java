@@ -24,6 +24,10 @@ public class CaptureScreenshots {
 	/**
 	 * Captures screenshot during the test
 	 *
+	 * @param driver
+	 *            Android Driver
+	 * @param TestName
+	 *            Name of the test to add in the screenshot name
 	 * @author Ashraf Iftekhar, Mar 27, 2017
 	 *
 	 */
@@ -43,7 +47,12 @@ public class CaptureScreenshots {
 
 	/**
 	 * Captures screenshot during the test
-	 *
+	 * 
+	 * @param driver
+	 *            Android Driver
+	 * @param TestName
+	 *            Name of the test to add in the screenshot name
+	 * 
 	 * @author Ashraf Iftekhar, Mar 27, 2017
 	 *
 	 */

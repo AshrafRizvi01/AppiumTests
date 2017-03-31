@@ -30,10 +30,8 @@ public class EmailReport {
 	 * 
 	 * @param EmailIds
 	 *            String[]
-	 * @param SenderEmail
-	 *            String
-	 * @param reportName
-	 *            String
+	 * 
+	 * @author md.ashrafiftekhar
 	 */
 	public static void SendReportAsEmail(String[] EmailIds) {
 		// Recipient's email ID needs to be mentioned.
@@ -77,7 +75,7 @@ public class EmailReport {
 			// Now set the actual message
 			multipart.addBodyPart(textpart);
 
-			textpart.setText("Please find the attached report" + "\n" + "This report was generated at " + dt.toString()
+			textpart.setText("Please find the attached report" + "\n" + "This report was generated on " + dt.toString()
 					+ "\n" + "Testing Team" + "\n" + "Thank You");
 
 			String filename = System.getProperty("user.dir") + "/" + "report.html";

@@ -1,0 +1,10 @@
+package com.test.pages;
+
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+
+public class Notification_popUp extends BaseTest {
+
+	@AndroidFindBy(id = "android:id/button1")
+	public MobileElement Allow_button;
+}

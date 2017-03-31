@@ -1,0 +1,31 @@
+package com.test.pages;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+
+public class LoginPage extends BaseTest {
+
+	public LoginPage(AppiumDriver<MobileElement> driver) {
+		super(driver);
+	}
+
+	@AndroidFindBy(id = "corg.cscpbc.parenting:id/email")
+	public static MobileElement Textbox_Email;
+
+	@AndroidFindBy(id = "org.cscpbc.parenting:id/password")
+	public static MobileElement Textbox_Password;
+
+	@AndroidFindBy(id = "org.cscpbc.parenting:id/login_button")
+	public static MobileElement Continue_button;
+
+	public void login(String email, String password) throws InterruptedException {
+
+		Thread.sleep(1000);
+		Textbox_Email.sendKeys(email);
+		Textbox_Password.sendKeys(password);
+		Continue_button.click();
+		Thread.sleep(2000);
+	}
+
+}

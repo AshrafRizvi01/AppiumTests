@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12923" started-at="2017-03-31T05:03:25Z" finished-at="2017-03-31T05:03:38Z">
+  <suite name="Default suite" duration-ms="12558" started-at="2017-03-31T07:37:19Z" finished-at="2017-03-31T07:37:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12923" started-at="2017-03-31T05:03:25Z" finished-at="2017-03-31T05:03:38Z">
-      <class name="com.test.utils.Test">
-        <test-method status="PASS" signature="test()[pri:0, instance:com.test.utils.Test@39aeed2f]" name="test" duration-ms="9" started-at="2017-03-31T10:33:25Z" finished-at="2017-03-31T10:33:25Z">
+    <test name="Default test" duration-ms="12558" started-at="2017-03-31T07:37:19Z" finished-at="2017-03-31T07:37:31Z">
+      <class name="com.test.utils.NewTest">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.test.utils.NewTest@39aeed2f]" name="f" duration-ms="10" started-at="2017-03-31T13:07:19Z" finished-at="2017-03-31T13:07:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.test.utils.Test@39aeed2f]" name="after" is-config="true" duration-ms="12890" started-at="2017-03-31T10:33:25Z" finished-at="2017-03-31T10:33:38Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.test.utils.NewTest@39aeed2f]" name="afterClass" is-config="true" duration-ms="12524" started-at="2017-03-31T13:07:19Z" finished-at="2017-03-31T13:07:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- com.test.utils.Test -->
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.test.utils.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

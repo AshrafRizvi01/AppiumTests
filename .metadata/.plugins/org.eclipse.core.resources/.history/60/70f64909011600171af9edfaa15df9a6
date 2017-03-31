@@ -1,0 +1,37 @@
+package com.test.pages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+
+public class LoginPage {
+
+	AppiumDriver<MobileElement> driver;
+
+	public LoginPage(AppiumDriver<MobileElement> driver) {
+		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+		this.driver = driver;
+	}
+
+	@AndroidFindBy(id = "corg.cscpbc.parenting:id/email")
+	public static MobileElement Textbox_Email;
+
+	@AndroidFindBy(id = "org.cscpbc.parenting:id/password")
+	public static MobileElement Textbox_Password;
+
+	@AndroidFindBy(id = "org.cscpbc.parenting:id/login_button")
+	public static MobileElement Continue_button;
+
+	public void login(String email, String password) throws InterruptedException {
+
+		Thread.sleep(1000);
+		Textbox_Email.sendKeys(email);
+		Textbox_Password.sendKeys(password);
+		Continue_button.click();
+		Thread.sleep(2000);
+	}
+
+}

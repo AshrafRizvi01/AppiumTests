@@ -1,5 +1,6 @@
 package com.test.pages;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
@@ -14,6 +15,15 @@ public class HomePage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
-	@AndroidFindBy(id = "name")
-	public WebElement Name;
+	@AndroidFindBy(xpath = "//android.widget.ImageButton[@index='0']")
+	public WebElement Hamburger_Icon;
+
+	public boolean isOnHomePage() {
+		try {
+			Hamburger_Icon.isDisplayed();
+			return true;
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+	}
 }

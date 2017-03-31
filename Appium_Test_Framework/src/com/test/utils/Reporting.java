@@ -5,6 +5,8 @@ package com.test.utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -48,8 +50,6 @@ public class Reporting {
 	 * <a href="ashraf.iftekhar@mutualmobile.com">Ashraf Iftekhar</a> for the
 	 * template file
 	 * 
-	 * @param NewReportName
-	 *            Name of the report you want to generate
 	 * @param EmailIds
 	 *            String Array of email ids
 	 * @throws ParserConfigurationException
@@ -61,7 +61,17 @@ public class Reporting {
 	public static void generate(String[] EmailIds) throws ParserConfigurationException, SAXException, IOException {
 		parseXML();
 		System.out.println("xmlParsed");
-		writeToHTML(System.getProperty("user.dir") + "/Test.html");
+		ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		InputStream path = loader.getResourceAsStream("Test.html");
+		InputStreamReader r = new InputStreamReader(path);
+		StringBuilder sb = new StringBuilder();
+		char[] chars = new char[4 * 1024];
+		int len;
+		while ((len = r.read(chars)) >= 0) {
+			sb.append(chars, 0, len);
+		}
+
+		writeToHTML(sb);
 		System.out.println("done");
 		EmailReport.SendReportAsEmail(EmailIds);
 	}
@@ -114,15 +124,13 @@ public class Reporting {
 	 * Writes HTML file after all the values are generated
 	 * 
 	 * @param TemplatePath
-	 * @param ReportName
 	 * 
 	 * @throws IOException
 	 */
-	public static void writeToHTML(String TemplatePath) throws IOException {
+	public static void writeToHTML(StringBuilder sb) throws IOException {
 		java.util.Date date = new java.util.Date();
 		SimpleDateFormat ft = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
-		File htmlTemplateFile = new File(TemplatePath);
-		String htmlString = FileUtils.readFileToString(htmlTemplateFile);
+		String htmlString = sb.toString();
 		htmlString = htmlString.replace("$Heading", "TestReport");
 
 		htmlString = htmlString.replace("$P", pass);
@@ -168,9 +176,9 @@ public class Reporting {
 	 *            Tester Name
 	 * @param Project
 	 *            Project in test or Application Under Test
-	 * @param platform
+	 * @param Platform
 	 *            Platform in test
-	 * @param device
+	 * @param Device
 	 *            Test Device
 	 * 
 	 * @author md.ashrafiftekhar
