@@ -1,0 +1,15 @@
+package com.test.utils;
+
+/**
+ * Provides email mechanism to send the report by email to the team members
+ * 
+ * @author Ashraf Iftekhar, Mar 30, 2017
+ *
+ */
+public class EmailReport {
+
+	public void SendReportAsEmail() {
+
+	}
+
+}

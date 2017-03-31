@@ -28,7 +28,7 @@ import org.xml.sax.SAXException;
 public class Reporting {
 
 	static String pass, fail, skip, ignore, total;
-	static String Tester = "--", project = "--", platform = "--", device = "--",
+	static String Tester = "Empty", project = "Empty", platform = "Empty", device = "Empty",
 			Notes = "Notes are not added for this report";
 
 	static String path = System.getProperty("user.dir") + "/test-output/testng-results.xml";
@@ -48,26 +48,26 @@ public class Reporting {
 	 * <a href="ashraf.iftekhar@mutualmobile.com">Ashraf Iftekhar</a> for the
 	 * template file
 	 * 
-	 * @param TemplatePath
-	 *            path of the Template file
 	 * @param NewReportName
-	 *            Name of report you want to create
+	 *            Name of the report you want to generate
+	 * @param EmailIds
+	 *            String Array of email ids
 	 * @throws ParserConfigurationException
 	 * @throws SAXException
 	 * @throws IOException
 	 * 
 	 * @author md.ashrafiftekhar
 	 */
-	public static void generate(String TemplatePath, String NewReportName)
-			throws ParserConfigurationException, SAXException, IOException {
+	public static void generate(String[] EmailIds) throws ParserConfigurationException, SAXException, IOException {
 		parseXML();
 		System.out.println("xmlParsed");
-		writeToHTML(TemplatePath, NewReportName);
+		writeToHTML(System.getProperty("user.dir") + "/Test.html");
 		System.out.println("done");
+		EmailReport.SendReportAsEmail(EmailIds);
 	}
 
 	/**
-	 * Internal method to parse the testng-results.xml file
+	 * Internal method to parse the testNG-results.xml file
 	 * 
 	 * @throws ParserConfigurationException
 	 * @throws SAXException
@@ -118,7 +118,7 @@ public class Reporting {
 	 * 
 	 * @throws IOException
 	 */
-	public static void writeToHTML(String TemplatePath, String ReportName) throws IOException {
+	public static void writeToHTML(String TemplatePath) throws IOException {
 		java.util.Date date = new java.util.Date();
 		SimpleDateFormat ft = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
 		File htmlTemplateFile = new File(TemplatePath);
@@ -131,10 +131,10 @@ public class Reporting {
 		htmlString = htmlString.replace("$I", ignore);
 		htmlString = htmlString.replace("$T", total);
 
-		htmlString = htmlString.replace("$Tester", Tester);
+		htmlString = htmlString.replace("$testerName", Tester);
 		htmlString = htmlString.replace("$Date", ft.format(date));
-		htmlString = htmlString.replace("$Project", project);
-		htmlString = htmlString.replace("$Platform", platform);
+		htmlString = htmlString.replace("$projectName", project);
+		htmlString = htmlString.replace("$platformName", platform);
 		htmlString = htmlString.replace("$Device", device);
 
 		htmlString = htmlString.replace("$Notes", Notes);
@@ -154,7 +154,7 @@ public class Reporting {
 
 		htmlString = htmlString.replace("$myrows", fullData);
 
-		File newHtmlFile = new File(System.getProperty("user.dir") + "/" + ReportName + ".html");
+		File newHtmlFile = new File(System.getProperty("user.dir") + "/" + "report.html");
 		FileUtils.writeStringToFile(newHtmlFile, htmlString);
 		System.out.println("file written");
 
@@ -175,11 +175,11 @@ public class Reporting {
 	 * 
 	 * @author md.ashrafiftekhar
 	 */
-	public static void addTestDetails(String TesterName, String Project, String platform, String device) {
+	public static void addTestDetails(String TesterName, String Project, String Platform, String Device) {
 		Tester = TesterName;
 		project = Project;
-		Reporting.platform = platform;
-		Reporting.device = device;
+		platform = Platform;
+		device = Device;
 	}
 
 	/**

@@ -7,7 +7,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.junit.BeforeClass;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
@@ -37,31 +36,25 @@ public class LoginTest {
 		Assert.assertEquals(true, loginPage.loginResults(driver));
 	}
 
-	@Test()
+	@Test(priority = 0)
 	public void Sample_test_method_to_test_the_report_process() {
 		Assert.assertEquals(true, false);
 	}
 
-	@Test()
+	@Test(priority = 2)
 	public void Sample_test_method_to_test_the_report_process2() {
 		Assert.assertEquals(true, true);
 	}
 
-	@Test(dataProvider = "dp")
-	public void Sample_test_method_to_test_the_report_process3(boolean a, boolean e) {
-		Assert.assertEquals(a, e);
-	}
-
-	@DataProvider(name = "dp")
-	public Object[][] dp() {
-		Object[][] obj = { { true, false }, { true, true }, { false, false } };
-		return obj;
+	@Test(priority = 1)
+	public void Sample_test_method_to_test_the_report_process3() {
+		Assert.assertEquals("a", "e");
 	}
 
 	@AfterClass
 	public void report() throws ParserConfigurationException, SAXException, IOException {
 		Reporting.addTestDetails("Ashraf.Iftekhar", "test", "Android", "Galaxy");
 		Reporting.AddTesterNotes("I am very gratefull to you");
-		Reporting.generate("/Users/md.ashrafiftekhar/Desktop/Test.html", "NewReport");
+		Reporting.generate("rohit");
 	}
 }

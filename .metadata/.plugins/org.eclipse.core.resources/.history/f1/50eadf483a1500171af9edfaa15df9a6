@@ -1,0 +1,73 @@
+package com.wuu.android.test.util;
+
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.Store;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
+/**
+ * Contains functions regarding the email verification process
+ * 
+ * @author Ashraf Iftekhar, Feb 3, 2017
+ *
+ */
+public class ReadVerificationEmail {
+
+	String host = "smtp.mail.yahoo.com";
+	String port = "587";
+	String emailid = "mmtesters@yahoo.com";
+	String password = "Password123$";
+	static String Content = "";
+	static String Code = "";
+
+	/**
+	 * Provides email verification code received on an email
+	 * 
+	 * @param Email
+	 * @param Password
+	 * @return Code
+	 * @throws MessagingException
+	 */
+	public static void main(String[] args) throws MessagingException {
+		String host = "smtp.mail.yahoo.com";
+		String port = "587";
+		String emailid = "mmtesters@yahoo.com";
+		String password = "Password123$";
+
+		emailSettings();
+		createSession();
+		sendMessage("a@yahoo.com", "rahul@gmail.com", "Test", "test Mail");
+	}
+
+	private static void sendMessage(String string, String string2, String string3, String string4) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void createSession() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void emailSettings() {
+		props.put("mail.smtp.host", host);
+		props.put("mail.smtp.auth", "true");
+		props.put("mail.debug", "false");
+		props.put("mail.smtp.port", port);
+
+		Session session = Session.getInstance(props, null);
+		Store store = session.getStore();
+		store.connect("imap.gmail.com", "ashrafrizvi3006@gmail.com", "8808666594");
+
+		MimeMessage message = new MimeMessage(session);
+		message.setFrom(new InternetAddress("ashrafrizvi3006@gmail.com"));
+		message.setSubject("Subject");
+		message.addRecipient(Message.RecipientType.TO, new InternetAddress("ashraf.iftekhar@mutualmobile.com"));
+		message.setText("Hello from the other side");
+		Transport.send(message);
+
+	}
+}

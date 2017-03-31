@@ -5,7 +5,7 @@
     <classes>
       <class name="com.test.testcases.LoginTest">
         <methods>
-          <include name="Sample_test_method_to_test_the_report_process3" invocation-numbers="0"/>
+          <include name="Sample_test_method_to_test_the_report_process3"/>
           <include name="report"/>
           <include name="Sample_test_method_to_test_the_report_process"/>
         </methods>

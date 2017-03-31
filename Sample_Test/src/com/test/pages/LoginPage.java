@@ -7,6 +7,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSFindBy;
 
 public class LoginPage {
 
@@ -17,6 +18,7 @@ public class LoginPage {
 		this.driver = driver;
 	}
 
+	@iOSFindBy(id = "something")
 	@AndroidFindBy(id = "com.livingapps.mdashrafiftekhar.tasker:id/email")
 	public WebElement Textbox_Email;
 

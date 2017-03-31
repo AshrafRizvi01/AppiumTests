@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,7 +107,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.testcases.LoginTest" hash-for-method="Sample_test_method_to_test_the_report_process3(true, false)">Sample_test_method_to_test_the_report_process3(true, false)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.testcases.LoginTest" hash-for-method="Sample_test_method_to_test_the_report_process3">Sample_test_method_to_test_the_report_process3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,16 +122,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.testcases.LoginTest" hash-for-method="Sample_test_method_to_test_the_report_process2">Sample_test_method_to_test_the_report_process2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.testcases.LoginTest" hash-for-method="Sample_test_method_to_test_the_report_process3(false, false)">Sample_test_method_to_test_the_report_process3(false, false)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.testcases.LoginTest" hash-for-method="Sample_test_method_to_test_the_report_process3(true, true)">Sample_test_method_to_test_the_report_process3(true, true)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -164,7 +154,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:305)
 	at org.testng.Assert.assertEquals(Assert.java:315)
-	at com.test.testcases.LoginTest.Sample_test_method_to_test_the_report_process(LoginTest.java:42)
+	at com.test.testcases.LoginTest.Sample_test_method_to_test_the_report_process(LoginTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,18 +186,17 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Sample_test_method_to_test_the_report_process3(true, false)">
-                  </a> <!-- Sample_test_method_to_test_the_report_process3(true, false) -->
+                  <a name="Sample_test_method_to_test_the_report_process3">
+                  </a> <!-- Sample_test_method_to_test_the_report_process3 -->
                   <span class="method-name">Sample_test_method_to_test_the_report_process3</span>
-                  <span class="parameters">(true, false)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+                  <div class="stack-trace">java.lang.AssertionError: expected [e] but found [a]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:305)
-	at org.testng.Assert.assertEquals(Assert.java:315)
-	at com.test.testcases.LoginTest.Sample_test_method_to_test_the_report_process3(LoginTest.java:52)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.test.testcases.LoginTest.Sample_test_method_to_test_the_report_process3(LoginTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -252,28 +241,12 @@
                   <span class="method-name">Sample_test_method_to_test_the_report_process2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Sample_test_method_to_test_the_report_process3(false, false)">
-                  </a> <!-- Sample_test_method_to_test_the_report_process3(false, false) -->
-                  <span class="method-name">Sample_test_method_to_test_the_report_process3</span>
-                  <span class="parameters">(false, false)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Sample_test_method_to_test_the_report_process3(true, true)">
-                  </a> <!-- Sample_test_method_to_test_the_report_process3(true, true) -->
-                  <span class="method-name">Sample_test_method_to_test_the_report_process3</span>
-                  <span class="parameters">(true, true)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/51/03zpgkb53zd1ms5nyzgds31c0000gn/T/testng-eclipse--1285761888/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/51/03zpgkb53zd1ms5nyzgds31c0000gn/T/testng-eclipse-1696137787/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -322,32 +295,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Sample_test_method_to_test_the_report_process')
 data.setCell(0, 2, 'com.test.testcases.LoginTest')
-data.setCell(0, 3, 21);
+data.setCell(0, 3, 12);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Sample_test_method_to_test_the_report_process2')
 data.setCell(1, 2, 'com.test.testcases.LoginTest')
-data.setCell(1, 3, 7);
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Sample_test_method_to_test_the_report_process3')
 data.setCell(2, 2, 'com.test.testcases.LoginTest')
-data.setCell(2, 3, 3);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Sample_test_method_to_test_the_report_process3')
-data.setCell(3, 2, 'com.test.testcases.LoginTest')
-data.setCell(3, 3, 3);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Sample_test_method_to_test_the_report_process3')
-data.setCell(4, 2, 'com.test.testcases.LoginTest')
-data.setCell(4, 3, 2);
+data.setCell(2, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 ms</span>
+              <span class="suite-total-time">Total running time: 15 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -388,26 +353,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Sample_test_method_to_test_the_report_process2</span>
-                <span class="method-start">33 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Sample_test_method_to_test_the_report_process3(true, false)</span>
-                <span class="method-start">58 ms</span>
+                <span class="method-name">Sample_test_method_to_test_the_report_process3</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Sample_test_method_to_test_the_report_process3(true, true)</span>
-                <span class="method-start">65 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Sample_test_method_to_test_the_report_process3(false, false)</span>
-                <span class="method-start">69 ms</span>
+                <span class="method-name">Sample_test_method_to_test_the_report_process2</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">report</span>
-                <span class="method-start">76 ms</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

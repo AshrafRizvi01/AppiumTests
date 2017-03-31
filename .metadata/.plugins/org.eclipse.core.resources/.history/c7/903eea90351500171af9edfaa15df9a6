@@ -1,0 +1,53 @@
+package com.wuu.android.test.util;
+
+import java.util.Properties;
+
+import javax.mail.BodyPart;
+import javax.mail.Folder;
+import javax.mail.Message;
+import javax.mail.Multipart;
+import javax.mail.Session;
+import javax.mail.Store;
+import javax.mail.internet.MimeMessage;
+
+/**
+ * Contains functions regarding the email verification process
+ * 
+ * @author Ashraf Iftekhar, Feb 3, 2017
+ *
+ */
+public class ReadVerificationEmail {
+
+	static String Content = "";
+	static String Code = "";
+
+	/**
+	 * Provides email verification code received on an email
+	 * 
+	 * @param Email
+	 * @param Password
+	 * @return Code
+	 */
+	public static void main(String[] args) {
+		Properties props = new Properties();
+		props.setProperty("mail.store.protocol", "imaps");
+		try {
+			Session session = Session.getInstance(props, null);
+			Store store = session.getStore();
+			store.connect("imap.gmail.com", "ashrafrizvi3006@gmail.com", "8808666594");
+			Folder inbox = store.getFolder("INBOX");
+			
+			MimeMessage message = new MimeMessage(session);
+					}
+				}}else{System.out.println("Email Not Found");}
+
+	}catch(
+
+	Exception mex)
+	{
+		mex.printStackTrace();
+	}System.out.println("New Accessed Code = "+Code);return Code;
+
+}
+
+}

@@ -22,5 +22,6 @@
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Documents/drive-download-20170117T123825Z/selenium-java-2.47.1.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Documents/Important Jars/java-mail-1.4.4.jar"/>
+	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Desktop/AppiumTestFramework.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
