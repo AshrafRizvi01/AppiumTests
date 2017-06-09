@@ -2,7 +2,8 @@ package com.test.utils;
 
 import org.openqa.selenium.Dimension;
 
-import io.appium.java_client.MobileDriver;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 
 /**
  * Contains functions for right to left and Left to right swipe actions
@@ -20,7 +21,7 @@ public class SwipeFunctions {
 	 * @param driver
 	 * @throws InterruptedException
 	 */
-	public static void LeftToRightHorrizontalSwipe(MobileDriver driver) throws InterruptedException {
+	public static void LeftToRightHorrizontalSwipe(AppiumDriver<MobileElement> driver) throws InterruptedException {
 		// Get the size of screen.
 		size = driver.manage().window().getSize();
 		System.out.println(size);
@@ -45,7 +46,7 @@ public class SwipeFunctions {
 	 * @param driver
 	 * @throws InterruptedException
 	 */
-	public static void RightToLeftHorizontalSwipes(MobileDriver driver) throws InterruptedException {
+	public static void RightToLeftHorizontalSwipes(AppiumDriver<MobileElement> driver) throws InterruptedException {
 		// Get the size of screen.
 		size = driver.manage().window().getSize();
 		System.out.println(size);

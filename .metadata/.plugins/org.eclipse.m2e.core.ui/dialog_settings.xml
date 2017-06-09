@@ -32,6 +32,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/md.ashrafiftekhar/Documents/workspace/CSC_Sample/src/Sample_login_test.java"/>
 			<item value="/Users/md.ashrafiftekhar/Documents/workspace/AI/src/com/example/ai/Speak.java"/>
 		</list>
 		<list key="projectNameTemplate">

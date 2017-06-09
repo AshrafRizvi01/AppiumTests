@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="435" key="DIALOG_X_ORIGIN"/>
-		<item value="9" key="DIALOG_Y_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="EditorSelectionDialog">
 		<item value="false" key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL"/>
@@ -26,9 +26,16 @@
 			<item value="save"/>
 		</list>
 	</section>
+	<section name="PreferencesImportWizard">
+		<item value="/Users/md.ashrafiftekhar/Downloads/theme-1.epf" key=""/>
+		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/md.ashrafiftekhar/Downloads/theme-1.epf"/>
+		</list>
+	</section>
 	<section name="NewWizardAction">
 		<item value="org.testng.eclipse.wizards.NewTestNGClassWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.buildship.ui.creationwizards"/>
 			<item value="org.testng.eclipse"/>
 		</list>
 	</section>
@@ -41,6 +48,10 @@
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.jdt.internal.ui.jarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.Preferences" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
 		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 			<item value="org.eclipse.jdt.ui.Java"/>

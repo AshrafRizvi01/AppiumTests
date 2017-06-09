@@ -13,6 +13,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.IOSMobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 /**
  * Generates and provides drivers for iOS and Android tests
@@ -24,6 +27,7 @@ public class TestDriver {
 
 	public static AndroidDriver<MobileElement> driver;
 	public static IOSDriver<MobileElement> iDriver;
+	public static AppiumDriverLocalService service;
 
 	/**
 	 * Returns driver for Android devices in order to execute Appium tests on
@@ -51,6 +55,14 @@ public class TestDriver {
 			cap.setCapability("appActivity", LaunchActivity);
 			cap.setCapability("platformVersion", AndroidVersion);
 			cap.setCapability("deviceName", "testdevice");
+			cap.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "org.csbpsc.app.parenting.parenting");
+
+			AppiumServiceBuilder builder = new AppiumServiceBuilder().withCapabilities(cap);
+
+			service = AppiumDriverLocalService.buildService(builder);
+
+			service.start();
+
 			try {
 				driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
 			} catch (MalformedURLException e) {
@@ -83,10 +95,20 @@ public class TestDriver {
 			File app = new File(appPath);
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability("app", app.getAbsolutePath());
-			cap.setCapability("ForceDevice", DeviceName);
-			cap.setCapability("UDID", UDID);
+			cap.setCapability("deviceName", DeviceName);
+			cap.setCapability("udid", UDID);
 			cap.setCapability("platformVersion", iOSVersion);
-			cap.setCapability("deviceName", "testdevice");
+			cap.setCapability("deviceName", DeviceName);
+			cap.setCapability("platformName", "iOS");
+			cap.setCapability("autoAcceptAlerts", true);
+			// cap.setCapability("appActivity", LaunchActivity);
+
+			AppiumServiceBuilder builder = new AppiumServiceBuilder().withCapabilities(cap);
+
+			service = AppiumDriverLocalService.buildService(builder);
+
+			service.start();
+
 			try {
 				iDriver = new IOSDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
 			} catch (MalformedURLException e) {
@@ -95,6 +117,10 @@ public class TestDriver {
 			iDriver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		}
 		return iDriver;
+	}
+
+	public static void stopAppiumService() {
+		service.stop();
 	}
 
 }

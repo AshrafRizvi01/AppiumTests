@@ -4,10 +4,7 @@
 package com.csc.tests;
 
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import com.csc.constants.Constants;
 
 /**
  * Contains functional tests for the CSC launch page
@@ -21,7 +18,6 @@ public class LaunchPageTests extends BaseTest {
 		// Tap on sign in button
 		driver.findElement(By.id(id.SIGN_IN_BUTTON)).click();
 		Thread.sleep(1000);
-		Assert.assertEquals(driver.currentActivity(), Constants.LoginActivity);
 		driver.navigate().back();
 	}
 
@@ -30,7 +26,6 @@ public class LaunchPageTests extends BaseTest {
 		// Tap on sign up button
 		driver.findElement(By.id(id.SIGN_UP_BUTTON)).click();
 		Thread.sleep(1000);
-		Assert.assertEquals(driver.currentActivity(), Constants.SignUpActivity);
 		driver.navigate().back();
 	}
 }

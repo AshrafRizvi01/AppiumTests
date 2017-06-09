@@ -80,10 +80,14 @@ public class Driver_Creation {
 			File app = new File(appPath);
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability("app", app.getAbsolutePath());
-			cap.setCapability("ForceDevice", DeviceName);
-			cap.setCapability("UDID", UDID);
+			cap.setCapability("deviceName", DeviceName);
+			cap.setCapability("udid", UDID);
 			cap.setCapability("platformVersion", iOSVersion);
-			cap.setCapability("deviceName", "testdevice");
+			cap.setCapability("deviceName", DeviceName);
+			cap.setCapability("platformName", "iOS");
+			cap.setCapability("autoAcceptAlerts", true);
+			// cap.setCapability("appActivity", LaunchActivity);
+
 			try {
 				iDriver = new IOSDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
 			} catch (MalformedURLException e) {

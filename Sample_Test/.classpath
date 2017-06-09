@@ -18,7 +18,6 @@
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/drive-download-20170227T091713Z-001/httpclient-4.4.1.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/drive-download-20170227T091713Z-001/httpcore-4.4.1.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/drive-download-20170227T091713Z-001/httpmime-4.4.1.jar"/>
-	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/drive-download-20170227T091713Z-001/java-client-3.2.0.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/drive-download-20170227T091713Z-001/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/drive-download-20170227T091713Z-001/selenium-java-2.47.1.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/cglib-2.1.95.jar"/>
@@ -27,5 +26,7 @@
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/jersey1.xjars/jersey-server-1.8.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Documents/Important Jars/java-mail-1.4.4.jar"/>
 	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Desktop/AppiumTestFramework.jar"/>
+	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/javassist.jar"/>
+	<classpathentry kind="lib" path="/Users/md.ashrafiftekhar/Downloads/java-client-4.1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

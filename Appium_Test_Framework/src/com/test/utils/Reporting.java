@@ -97,7 +97,11 @@ public class Reporting {
 			pass = attributes.getNamedItem("passed").getNodeValue();
 			fail = attributes.getNamedItem("failed").getNodeValue();
 			skip = attributes.getNamedItem("skipped").getNodeValue();
-			ignore = attributes.getNamedItem("ignored").getNodeValue();
+			try {
+				ignore = attributes.getNamedItem("ignored").getNodeValue();
+			} catch (Exception e) {
+				ignore = "0";
+			}
 			total = attributes.getNamedItem("total").getNodeValue();
 
 		}

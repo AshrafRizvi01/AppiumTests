@@ -14,6 +14,5 @@ public class BaseTest {
 
 	public BaseTest(AppiumDriver<MobileElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver, 2, TimeUnit.SECONDS), this);
-
 	}
 }
