@@ -1,8 +1,0 @@
-/**
- * Package contains class to setup android and iOS capabilities to provide a suitable driver for the tests
- */
-/**
- * @author Ashraf Iftekhar, Mar 26, 2017
- *
- */
-package com.test.utils;

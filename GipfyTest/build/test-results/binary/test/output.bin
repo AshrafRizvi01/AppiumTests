@@ -1,0 +1,67 @@
+B[Tue Jun 06 17:44:32 IST 2017] [driver] Starting test: 'Untitled'
+Þ[Tue Jun 06 17:44:32 IST 2017] [driver] {appPackage=com.giphy.messenger.debug, dontGoHomeOnQuit=false, noReset=false, dontStopAppOnReset=false, instrumentApp=false, reservationDuration=240, reportFormat=xml, fullReset=false, appActivity=com.giphy.messenger.app.MainActivity, waitForDeviceTimeout=120000, useRemoteGrid=false, reportDirectory=reports, [enableclientlog, enableclientlogger]=false, autoWebview=false, udid=0988beed027f8ab4, platformName=Android, testName=Untitled}
+<[Tue Jun 06 17:44:32 IST 2017] [driver] context: NATIVE_APP
+A[Tue Jun 06 17:44:32 IST 2017] [driver] application under test: 
+7[Tue Jun 06 17:44:32 IST 2017] [driver] app path: null
+:[Tue Jun 06 17:44:32 IST 2017] [driver] full reset: false
+:[Tue Jun 06 17:44:32 IST 2017] [driver] instrument: false
+8[Tue Jun 06 17:44:32 IST 2017] [driver] no reset: false
+P[Tue Jun 06 17:44:32 IST 2017] [driver] package name: com.giphy.messenger.debug
+\[Tue Jun 06 17:44:32 IST 2017] [driver] activity name: com.giphy.messenger.app.MainActivity
+<[Tue Jun 06 17:44:32 IST 2017] [driver] stop on reset: true
+7[Tue Jun 06 17:44:32 IST 2017] [driver] browser: false
+B[Tue Jun 06 17:44:32 IST 2017] [driver] connecting localhost:8889
+L[Tue Jun 06 17:44:32 IST 2017] [driver] Call of getSessionID returned: 20db
+L[Tue Jun 06 17:44:32 IST 2017] [driver] setting reporter directory: reports
+E[Tue Jun 06 17:44:32 IST 2017] [driver] setting reporter format: xml
+D[Tue Jun 06 17:44:32 IST 2017] [driver] setting test name: Untitled
+o[Tue Jun 06 17:44:32 IST 2017] [driver] wait for device '@serialnumber='0988beed027f8ab4'' timeout-ms='120000'
+C[Tue Jun 06 17:44:32 IST 2017] [driver] Device 'adb:Nexus 5' ready
+u[Tue Jun 06 17:44:33 IST 2017] [driver] launching com.giphy.messenger.debug/com.giphy.messenger.app.MainActivity ...
+K[Tue Jun 06 17:44:41 IST 2017] [driver] Call of launchApp returned: native
+o[Tue Jun 06 17:44:41 IST 2017] [20db] [driver] [start] findElement(By.xpath: //*[@id='user_avatar_image_gif'])
+n[Tue Jun 06 17:44:41 IST 2017] [20db] [driver] [start] findElementByXPath("//*[@id='user_avatar_image_gif']")
+H[Tue Jun 06 17:44:44 IST 2017] [20db] [driver] [end] findElementByXPath
+A[Tue Jun 06 17:44:44 IST 2017] [20db] [driver] [end] findElement
+@[Tue Jun 06 17:44:44 IST 2017] [20db] [element] [start] click()
+<[Tue Jun 06 17:44:44 IST 2017] [20db] [element] [end] click
+[[Tue Jun 06 17:44:44 IST 2017] [20db] [driver] [start] findElement(By.id: join_giphy_text)
+Z[Tue Jun 06 17:44:44 IST 2017] [20db] [driver] [start] findElementById("join_giphy_text")
+E[Tue Jun 06 17:44:46 IST 2017] [20db] [driver] [end] findElementById
+A[Tue Jun 06 17:44:46 IST 2017] [20db] [driver] [end] findElement
+F[Tue Jun 06 17:44:46 IST 2017] [20db] [element] [start] getLocation()
+B[Tue Jun 06 17:44:47 IST 2017] [20db] [element] [end] getLocation
+B[Tue Jun 06 17:44:47 IST 2017] [20db] [element] [start] getSize()
+>[Tue Jun 06 17:44:48 IST 2017] [20db] [element] [end] getSize
+B[Tue Jun 06 17:44:48 IST 2017] [20db] [element] [start] getSize()
+>[Tue Jun 06 17:44:49 IST 2017] [20db] [element] [end] getSize
+1080
+v[Tue Jun 06 17:44:49 IST 2017] [20db] [driver] [start] performTouchAction(io.appium.java_client.TouchAction@2ffc5f67)
+U[Tue Jun 06 17:44:49 IST 2017] [20db] [driver] [start] execute("performTouchAction")
+=[Tue Jun 06 17:44:49 IST 2017] [20db] [driver] [end] execute
+H[Tue Jun 06 17:44:49 IST 2017] [20db] [driver] [end] performTouchAction
+t[Tue Jun 06 17:44:49 IST 2017] [20db] [driver] [start] findElement(By.xpath: //*[@id='signup_user_name_edit_text'])
+s[Tue Jun 06 17:44:49 IST 2017] [20db] [driver] [start] findElementByXPath("//*[@id='signup_user_name_edit_text']")
+H[Tue Jun 06 17:45:00 IST 2017] [20db] [driver] [end] findElementByXPath
+A[Tue Jun 06 17:45:00 IST 2017] [20db] [driver] [end] findElement
+t[Tue Jun 06 17:45:00 IST 2017] [20db] [driver] [start] findElement(By.xpath: //*[@id='signup_user_name_edit_text'])
+s[Tue Jun 06 17:45:00 IST 2017] [20db] [driver] [start] findElementByXPath("//*[@id='signup_user_name_edit_text']")
+H[Tue Jun 06 17:45:11 IST 2017] [20db] [driver] [end] findElementByXPath
+A[Tue Jun 06 17:45:11 IST 2017] [20db] [driver] [end] findElement
+t[Tue Jun 06 17:45:11 IST 2017] [20db] [driver] [start] findElement(By.xpath: //*[@id='signup_user_name_edit_text'])
+s[Tue Jun 06 17:45:11 IST 2017] [20db] [driver] [start] findElementByXPath("//*[@id='signup_user_name_edit_text']")
+H[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [end] findElementByXPath
+A[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [end] findElement
+F[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [start] getSessionId()
+L[Tue Jun 06 17:45:22 IST 2017] [driver] Call of getSessionID returned: 20db
+B[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [end] getSessionId
+F[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [start] getSessionId()
+L[Tue Jun 06 17:45:22 IST 2017] [driver] Call of getSessionID returned: 20db
+B[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [end] getSessionId
+I[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [start] getCapabilities()
+E[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [end] getCapabilities
+I[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [start] getCapabilities()
+E[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [end] getCapabilities
+>[Tue Jun 06 17:45:22 IST 2017] [20db] [driver] [start] quit()
+}[Tue Jun 06 17:45:29 IST 2017] [driver] Call of close returned: /Users/md.ashrafiftekhar/appiumstudio-reports/reports/test21
+:[Tue Jun 06 17:45:29 IST 2017] [20db] [driver] [end] quit
