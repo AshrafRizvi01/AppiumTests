@@ -1,0 +1,54 @@
+package Test;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import com.experitest.appium.*;
+
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
+
+public class NewTest {
+	private String host = "localhost";
+	private int port = 8889;
+	private String reportDirectory = "reports";
+	private String reportFormat = "xml";
+	private String testName = "Untitled";
+	protected SeeTestAndroidDriver<SeeTestAndroidElement> driver = null;
+
+	@Before
+	public void setUp() throws MalformedURLException {
+		DesiredCapabilities dc = new DesiredCapabilities();
+		dc.setCapability(SeeTestCapabilityType.REPORT_DIRECTORY, reportDirectory);
+		dc.setCapability(SeeTestCapabilityType.REPORT_FORMAT, reportFormat);
+		dc.setCapability(SeeTestCapabilityType.TEST_NAME, testName);
+		dc.setCapability(MobileCapabilityType.UDID, "0988beed027f8ab4");
+		dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.giphy.messenger.debug");
+		dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.giphy.messenger.app.MainActivity");
+		driver = new SeeTestAndroidDriver<>(new URL("http://" + host + ":" + port), dc);
+	}
+
+	@Test
+	public void testUntitled() {
+		driver.findElement(By.xpath("//*[@id='user_avatar_image_gif']")).click();
+		driver.findElement(By.xpath("//*[@id='user_avatar_image_gif']")).click();
+		driver.findElement(By.xpath("//*[@text=concat('Don', \"'\", 't Have An Account? Join Giphy!')]"))
+				.sendKeys("asas");
+		driver.findElement(By.xpath("//*[@id='signup_user_name_edit_text']")).sendKeys("asasasas");
+		driver.findElement(By.xpath("//*[@id='signup_bg_gif_image_view']")).sendKeys("asasas");
+		driver.findElement(By.xpath("//*[@id='signup_bg_gif_image_view']")).click();
+		driver.findElement(By.xpath("//*[@id='checkbox_terms_of_use_signup']")).click();
+		driver.findElement(By.xpath("//*[@text='JOIN']")).click();
+	}
+
+	@After
+	public void tearDown() {
+		driver.quit();
+	}
+}

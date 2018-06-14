@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BaseTest.java&apos; to &apos;CSC/src/com.csc.tests&apos;&#x0A;- Original project: &apos;WUUTest&apos;&#x0A;- Destination element: &apos;CSC/src/com.csc.tests&apos;&#x0A;- Original element: &apos;com.wuu.android.test.BaseTest.java&apos;" description="Copy compilation unit" destination="=CSC/src&lt;com.csc.tests" element1="/src&lt;com.wuu.android.test{BaseTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1488177846153" units="1" version="1.0"/>
+</session>
